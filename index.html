@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>love you</title>
+  <title>I love you</title>
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
@@ -85,9 +85,9 @@ font-family: 'Comfortaa', cursive;
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="x" onclick="play()">
   
-  <audio src="https://www.dropbox.com/s/ulahmuzeqj5jn19/Tere%20Sang%20Yaara%20-%20LYRICS%20Video%20%20Rustom%20%20Akshay%20Kumar%20%26%20Ileana%20D%27cruz%20%20Atif%20Aslam%20%20Arko.mp3?dl=1" autoplay loop></audio>
+  <audio id="a" src="https://www.dropbox.com/s/ulahmuzeqj5jn19/Tere%20Sang%20Yaara%20-%20LYRICS%20Video%20%20Rustom%20%20Akshay%20Kumar%20%26%20Ileana%20D%27cruz%20%20Atif%20Aslam%20%20Arko.mp3?dl=1" autoplay loop></audio>
 
 
 <div class="bg_heart">
@@ -103,6 +103,10 @@ font-family: 'Comfortaa', cursive;
   
 
 <script>
+    
+    function play() {
+        document.getElementById('a').play()
+    }
     
 var love = setInterval(function(){
   var r_num = Math.floor(Math.random() * 40) + 1;
